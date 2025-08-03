@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KathiyawadScript Playground</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>KathiyawadScript Playground (જલસો)</h1>
+      <p>Aay haalo, code lakho ne maja karo!</p>
+    </header>
+
+    <main class="container">
+      <div class="code-container">
+        <h3>તમારો કોડ (KathiyawadScript)</h3>
+        <textarea id="codeInput" spellcheck="false">
+# Tamaro Kathiyawadi code ahi lakho...
+
+dekhad "Hello, Kathiyawad!"
+
+3 vakhat
+  dekhad "Maja ma!"
+puro
+</textarea
+        >
+      </div>
+
+      <div class="controls">
+        <button id="runButton">ચલાવો (Run)</button>
+      </div>
+
+      <div class="code-container">
+        <h3>બદલાયેલો કોડ (JavaScript)</h3>
+        <textarea id="jsOutput" readonly spellcheck="false"></textarea>
+      </div>
+    </main>
+
+    <footer>
+      <h3>પરીણામ (Console Output)</h3>
+      <pre id="consoleOutput"></pre>
+    </footer>
+
+    <script type="module" src="sandbox.js"></script>
+  </body>
+</html>
