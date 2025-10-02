@@ -1,0 +1,69 @@
+{
+    "name": "kathiyawadscript",
+    "version": "4.0.0",
+    "description": "A complete modern programming language with Gujarati keywords - Compiler, Tools, and Playground",
+    "main": "core/kathiyawadscript-compiler.js",
+    "bin": {
+        "ks": "./cli/kathiyawadscript-cli.js",
+        "kathiyawadscript": "./cli/kathiyawadscript-cli.js"
+    },
+    "scripts": {
+        "test": "node test-complete-language.js",
+        "test:basic": "node test-compiler.js",
+        "test:advanced": "node test-advanced-compiler.js",
+        "playground": "python3 -m http.server 8000",
+        "playground:modern": "open index-modern.html",
+        "playground:enhanced": "open index-enhanced.html",
+        "playground:original": "open index.html",
+        "cli": "node kathiyawadscript-cli.js",
+        "repl": "node kathiyawadscript-cli.js repl",
+        "docs": "node -e \"console.log('📚 Documentation: See language-spec.md')\"",
+        "benchmark": "node -e \"const {CompleteLanguageTester} = require('./test-complete-language.js'); new CompleteLanguageTester().runPerformanceBenchmarks()\"",
+        "build": "echo '✅ KathiyawadScript is ready to use!'",
+        "install-global": "npm install -g ."
+    },
+    "keywords": [
+        "programming-language",
+        "compiler",
+        "gujarati",
+        "kathiyawadi",
+        "transpiler",
+        "cli",
+        "repl",
+        "playground",
+        "modern-ui",
+        "developer-tools",
+        "language-server",
+        "syntax-highlighting",
+        "code-analysis"
+    ],
+    "author": "KathiyawadScript Team",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/kathiyawadscript.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yourusername/kathiyawadscript/issues"
+    },
+    "homepage": "https://yourusername.github.io/kathiyawadscript",
+    "files": [
+        "core/",
+        "cli/",
+        "playground/",
+        "docs/",
+        "examples/",
+        "assets/",
+        "index.html",
+        "README.md",
+        "LICENSE"
+    ],
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "preferGlobal": true,
+    "directories": {
+        "test": "tests",
+        "doc": "docs"
+    }
+}
